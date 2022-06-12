@@ -1,6 +1,6 @@
 'use strict';
 
-const data = require('../public/data/seeder_data')
+const urlData = require('../public/data/seeder_data')
 const userData = require('../public/data/seeder_user_data')
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
      * }], {});
     */
     await queryInterface.bulkInsert('users', userData, {} )
-    await queryInterface.bulkInsert('urls', data, {});
+    await queryInterface.bulkInsert('urls', urlData, {});
     
   },
 

@@ -8,10 +8,10 @@ router.get('/', async (req, res)=>{
     const data = await Users.findOne({
        include : [{
         model : Urls,
-        where : {owner : 1},
+        where : {owner : 2},
         attributes : ['id', 'url', 'title']
        }],
-       attributes : ['id', 'firstName']
+    //    attributes : ['id', 'firstName']
        
     })
 

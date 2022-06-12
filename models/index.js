@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const Urls = require('./urls');
-const Users = require('./');
+const Users = require('./users');
 
 const env = process.env.NODE_ENV || 'development';
 const config = require('../config/config')[env];

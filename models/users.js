@@ -18,6 +18,13 @@ module.exports = class Users extends Sequelize.Model{
                 allowNull : true,
                 defaultValue : null,
             },
+            // address:{
+            //   type : Sequelize.STRING(255),
+            //   allowNull : true,
+            //   defaultValue : null,
+            //   onDelete : 'SET NULL',
+            //   onUpdate : 'SET NULL'
+            // },
             createdAt : {
                 type : Sequelize.DATE,
                 allowNull : true,

@@ -10,7 +10,7 @@ const route = require('./routes')
 const app = express();
 
 // sequelize 실행
-sequelize.sync({foce : false})
+sequelize.sync({force : false})
     .then(()=>{
         console.log("Database connected")
     })
